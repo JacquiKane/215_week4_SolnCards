@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Solns 215(4)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="drop.css">
+    <script src="drop.js" defer></script> 
+    <style>
+table, th, td {
+  border: 1px solid;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Heading -->
+    <h2 class="heading112">Web Prg Solution Cards, Practice Lab 
+    </h2>
+    <!-- Flex Container of Flip Cards-->
+    <div class= "wrapper">
+    <aside class="about">
+        <p>
+        Here are some important concepts.
+        </p>
+
+        <button class="accordion">variable</button>
+        <div class="panel">
+            <p>
+                Named location in computer memory.
+                        </p>
+                        <p>Use <i>let</i> by default, <i>const</i> if no changes.</p>
+                        <p>Avoid <i>var</i>, because of <i>hoisting.</i></p>
+        </div> 
+           
+            <button class="accordion">conditional</button>
+            <div class="panel">
+                <p>
+                   if statement </p>
+                   <table style="border:2px solid #990000;">
+                       <tr>
+                           <td>
+                               if (condition){ <br>
+                                // code if true </br>
+                               }
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                               if (condition) { <br>
+                                   // code - condition true}<br>
+                               else {<br>
+                                   //code - condition false<br>
+                               }
+
+                           </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            if (condition1) { <br>
+                                // code - condition1 true}<br>
+                            else if (condition2){<br>
+                                //code - condition2 true<br>
+                            }<br>
+                            else {<br>
+                                // code- neither condition true<br>
+                            }
+
+                        </td>
+                    </tr>
+                   </table>
+            </div>    
+
+       <button class="accordion">while loop</button>
+       <div class="panel">
+         <p>
+           statement supporting iteration - looping
+            </p>
+            <p>while (condition) {<br>
+            // code in body of loop  <br>  
+            }</p>
+            <p>while loop typically uses sentry variable or loop variable.</p>
+       </div>       
+
+<button class="accordion">for loop</button>
+<div class="panel">
+    <p>
+        statement supporting iteration - looping
+         </p>
+         <p>for (initialization; condition; loop statement) {<br>
+         // code in body of loop  <br>  
+         }</p>
+         <p>for loop typically uses sentry variable or loop variable.</p>
+
+</div> 
+
+<button class="accordion">function</button>
+<div class="panel">
+  <p>block of code, given a name and a label, executes when called.</p>
+
+</div> 
+
+
+
+    </aside>
+  
+        <article class="info">
+                    <!-- TASK 1 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="flip_about">TASK #1</div>
+                    <img class="flip-card-img" src="task.png" alt="task #1">
+
+                </div>
+                <div class="flip-card-back">
+                    <h1>Task 1</h1>
+                    <p> 
+                        // Use the prompt call to get input as a string<br>
+                        let number = prompt("Please enter a number");<br>
+                        <br>
+                        // Find the reference to the div with id of task1<br>
+                        let refToTask1 = document.querySelector("#task1");<br>
+                        <br>
+                        // Set the innerHTML property<br>
+                        refToTask1.innerHTML = <br>`The number you entered is ${number}`;</p>          
+                </div>
+            </div>
+        </div>
+            <!-- TASK 2 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip_about">TASK #2 </div>
+                        <img class="flip-card-img" src="task.png" alt="task #2">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Task #2</h1>
+                      
+                        <p>let points = prompt("Please enter the exam points value");<br>
+                            let refToTask2 = document.querySelector("#task2");<br>
+                            
+                            // Convert to a number<br>
+                            points = parseInt(points);<br>
+                            </p>
+                            <table>
+                                <tr>
+                                    <td style="width: 40%; text-align: left;">                            let displayStr = "";<br>
+                            // (a)<br>
+                            let ifStr="";<br>
+                            if (points > 90)<br>
+                            &nbsp;  &nbsp;&nbsp;&nbsp;  ifStr = "A";<br>
+                            else if (points > 80)<br>
+                            &nbsp;  &nbsp;&nbsp;&nbsp;    ifStr = "B";  <br>
+                            else if (points > 70)<br>
+                            &nbsp;  &nbsp;&nbsp;&nbsp;   ifStr = "C";<br>
+                            &nbsp;  &nbsp;&nbsp;&nbsp;..............<br>
+                            else<br>
+                            &nbsp;  &nbsp;&nbsp;&nbsp;    ifStr ="F";<br>
+                            </td>
+                                    <td  style="width: 40%;text-align: left;"> 
+                             let switchStr = "";<br>
+ switch (true) {<br>
+   case points > 90:<br>
+     &nbsp;  &nbsp;switchStr = "switch : A";<br>
+     &nbsp;  &nbsp;break;<br>
+   case points > 80:<br>
+     &nbsp;  &nbsp;switchStr = "switch : B";<br>
+     &nbsp;  &nbsp;break;<br>
+     ...<br>
+   default:<br>
+     &nbsp;  &nbsp;switchStr = "F";<br>
+ }<br>
+
+</td>
+                                </tr>
+                            </table>
+let refToTask2x = document.querySelector(".task2x");<br>...
+refToTask2x.innerHTML = your_Str;<br>
+                           
+                    </div>
+                </div>
+            </div>
+
+        <!-- TASK 3 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="flip_about">TASK #3</div>
+                    <img class="flip-card-img" src="task.png" alt="task #3">
+                </div>
+                <div class="flip-card-back">
+                    <h1>TASK #3</h1>
+                    <p>
+                        let professor = prompt("Who are the lines for?");<br>
+                        let lineToWrite = prompt("What is the line?");<br>
+                        let numberOfLines = prompt("How many lines?");<br>
+                        <br>
+                        numberOfLines = parseInt(numberOfLines);<br>
+                        <br>
+                        for (let line = 1; line <= numberOfLines; line++) {<br>
+                          &nbsp;&nbsp;console.log(`${line} ${lineToWrite}`);<br>
+                        }
+                    
+                    </p>
+                   
+                 
+                </div>
+            </div>
+        </div>
+
+                <!-- TASK #4 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="flip_about">TASK #4</div>
+                            <img class="flip-card-img" src="task.png" alt="task #4">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>TASK #4</h1>
+                            <p>
+                                let professor = prompt("Who are the lines for?");<br>
+                                let lineToWrite = prompt("What is the line?");<br>
+                                let numberOfLines = prompt("How many lines?");<br>
+                                <br>
+                                numberOfLines = parseInt(numberOfLines);<br>
+                                let task4_str = "&lt;ul&gt;";<br>
+                                let line = 1;<br>
+                                while (line &lt;= numberOfLines) {<br>
+                                  &nbsp;&nbsp;task4_str += `&lt;li&gt;${line} ${lineToWrite}&lt;/li&gt;`;<br>
+                                  &nbsp;&nbsp;line++;<br>
+                                }<br>
+                                task4_str += "&lt;/ul&gt;";<br>
+                                <br>
+                                let refToTask4Div = document.querySelector("#task4");<br>
+                                refToTask4Div.innerHTML = task4_str; </p>
+                         
+                        </div>
+                    </div>
+                </div>
+
+
+
+        <!-- TASK#5 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="flip_about">TASK #5</div>
+                    <img class="flip-card-img" src="task.png" alt="task #5">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Task #5</h1>
+                    <p>
+                        let professor = prompt("Who are the lines for?");<br>
+                        let lineToWrite = prompt("What is the line?");<br>
+                        let numberOfLines = prompt("How many lines?");<br>
+                        numberOfLines = parseInt(numberOfLines);<br>
+                        <br>
+                        const lineWriter = (numberOfLines)=> {<br>
+                            let task5_str = "&lt;ul&gt;";<br>
+                            for (let line = 1; line <= numberOfLines; line++) {<br>
+                              task5_str += `&lt;li&gt;${line} ${lineToWrite}&lt;/li&gt;`;<br>
+                            }<br>
+                            task5_str += "&lt;/ul&gt;";<br>
+                            return task5_str;<br>
+                        }<br>
+                        <br>
+                        const meanProfessorTitler = function(professor){<br>
+                            return(`&lt;h1&gt; ${professor} &lt;/h1&gt;`);<br>
+                        }<br>
+                        
+                        
+                        let refToTask5Div = document.querySelector("#task4");<br>
+                        refToTask5Div.innerHTML = meanProfessorTitler(professor);<br>
+                        refToTask5Div.innerHTML += lineWriter(numberOfLines);<br>
+                    </p>
+                  
+                 
+                </div>
+            </div>
+        </div>
+
+        <!-- TASK 6 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="flip_about">TASK #6</div>
+                    <img class="flip-card-img" src="task.png" alt="task #6">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Task #6</h1>
+                    <p>
+                        const timesTable = function(number) {<br>
+                            let str = "";<br>
+                            let firstFactor = number;<br>
+                            let secondFactor = 1;<br>
+                            while (secondFactor &lt;= 12) {<br>
+                                &nbsp;&nbsp;let product = firstFactor * secondFactor;<br>
+                                &nbsp;&nbsp;str += `${firstFactor} X ${secondFactor} = ${product}&lt;br&gt;`;<br>
+                                &nbsp;&nbsp;secondFactor++;<br>
+                            }<br>
+                            str+= `&lt;br&gt; ---------------------- &lt;br&gt;`;<br>
+                            return(str);<br>
+                        }<br>
+                        <br>
+                        task6_str = "";<br>
+                        for (let number = 1; number &lt;= 12; number++) {<br>
+                            &nbsp;&nbsp;task6_str += timesTable(number);<br>
+                        }<br>
+                        <br>
+                        let refTotask6Div = document.querySelector("#task6");<br>
+                        refTotask6Div.innerHTML = task6_str;<br>
+                    </p>
+               
+                 
+                </div>
+            </div>
+        </div>
+
+
+ 
+
+
+    </article>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 class="task1">Quantity: </h3>
+    <h3 class="task2"></h3>
+    <h3 class="task3a"></h3>
+    <h3 class="task3b"></h3>
+    <script>
+        // Task #1
+        let number = prompt("Enter a number ");
+        number = parseFloat(number);
+
+        let refToTask1 = document.querySelector(".task1");
+        refToTask1.innerHTML  = "Quantity:" + number;
+
+        // Task 2
+        let perCentage = prompt("Enter a percentage ");
+        perCentage = parseFloat(perCentage);
+        let refToTask2 = document.querySelector(".task2");
+        let calculatedPerCentage = (perCentage/100)*number;
+        let displayStr = `${perCentage}% of ${number} is ${calculatedPerCentage.toFixed(2)}`;
+        refToTask2.innerHTML = displayStr;
+
+        // Task 3
+        // a)
+        let points = prompt("Enter points between 1 and 100");
+        points = parseFloat(points);
+        if (points > 91) {
+
+        }
+</script>
+</body>
+</html>
